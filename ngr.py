@@ -3,7 +3,6 @@ from sys import *
 import os 
 from os import *
 import time
-import random
 from io import *
 class color:
     morado = '\033[95m'
