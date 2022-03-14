@@ -120,7 +120,7 @@ def menu():
      print()
      print(f"{color.amarillo} TU AUTOKEN SE HA REGISTRADO")
      time.sleep(4)
-     menú()
+     menu()
     
     elif eleccion == "6" :
      banner()
