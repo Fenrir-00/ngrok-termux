@@ -117,6 +117,10 @@ def menu():
      print("")
      var=input(f"{color.cyan}introduce tu token >>> ")
      os.system(f"./{var}"  )
+     print()
+     print(f"{color.amarillo} TU AUTOKEN SE HA REGISTRADO")
+     time.sleep(4)
+     menú()
     
     elif eleccion == "6" :
      banner()
