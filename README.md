@@ -3,10 +3,10 @@
 #dudas a telegram @Ritorito1990
 # instalación
 ```bash
-pkg instalar git
+pkg install git
 ```
 ```bash
-pkg instalar python
+pkg install python
 ```
 ```bash
 git clone https://github.com/Fenrir-00/ngrok-termux
