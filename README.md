@@ -1,4 +1,4 @@
-# ngrok-termux
+![Screenshot](ngrok.png)
 #solo funciona con termux
 #dudas a telegram @Ritorito1990
 # instalación
