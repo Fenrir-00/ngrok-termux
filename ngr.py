@@ -1,4 +1,11 @@
 import os, sys, time, io
+while True:
+ try:
+  from lolpython import lol_py
+  break
+ except ModuleNotFoundError:
+  os.system("pip install lolpython")
+
 class color:
     morado = '\033[95m'
     blanco = '\033[97m'
@@ -13,13 +20,21 @@ os.system("chmod +x ngrok")
 def banner():
  os.system("clear")
  print(f"""{color.cyan}
-███████╗███████╗███╗  ██╗██████╗ ██╗██████╗
-██╔════ ██╔════╝████╗ ██║██╔══██╗██║██╔══██╗
-█████╗  █████╗  ██╔██╗██║██████╔╝██║██████╔╝
-██╔══   ██╔══╝  ██║╚████║██╔══██╗██║██╔══██╗
-██║     ███████╗██║ ╚███║██║  ██║██║██║  ██║
-╚═╝     ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝""")
- print(f"{color.fin}")
+
+███╗  ██╗ ██████╗ ██████╗  █████╗ ██╗  ██╗████████╗██╗  ██╗
+████╗ ██║██╔════╝ ██╔══██╗██╔══██╗██║ ██╔╝╚══██╔══╝╚██╗██╔╝
+██╔██╗██║██║  ██╗ ██████╔╝██║  ██║█████═╝    ██║    ╚███╔╝
+██║╚████║██║  ╚██╗██╔══██╗██║  ██║██╔═██╗    ██║    ██╔██╗
+██║ ╚███║╚██████╔╝██║  ██║╚█████╔╝██║ ╚██╗   ██║   ██╔╝╚██╗
+╚═╝  ╚══╝ ╚═════╝ ╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝{color.fin}""")
+ texto ="""
+ |=======================================================|
+ | Script by              : #FENRIR-00                   |
+ | Version                : Version  2.1                 |
+ | Follow me on Github    : https://github.com/Fenrir-00 |
+ | Contact me on Telegram : @Ritorito1990                |
+ ========================================================= """
+ lol_py(texto)
 
 #barra de carga
 def carga():
@@ -77,14 +92,14 @@ def menu():
      print(len(eleccion))
      os.system("clear")
      banner()
-     print(f"{color.verde}    .....NGROK.....")
+     print(f"{color.morado}             .....NGROK.....")
      print("")
      print(f"{color.verde}[1]INCIAR NGROK TCP 4444")
      print(f"{color.verde}[2]ELEGIR MANUAL TCP ")
      print("[3]INCIAR NGROK HTTP 8080")
      print(f"{color.verde}[4]ELEGIR MANUAL HTTP ")
      print(f"{color.amarillo}[5]PONER AUTOKEN")
-     print(f"{color.rojo}[6]SALIR{color.fin}")
+     print(f"{color.rojo}[0]SALIR{color.fin}")
      eleccion =input(f"{color.cyan}ELIJE UN NUMERO >> ")
     if eleccion == "1" :
         banner()
@@ -121,7 +136,7 @@ def menu():
      time.sleep(4)
      menu()
     
-    elif eleccion == "6" :
+    elif eleccion == "0" :
      banner()
      salir()
     else:
