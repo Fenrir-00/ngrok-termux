@@ -64,7 +64,6 @@ def carga():
 def menu():
     os.system("clear")
     banner()
-    carga()
     print(f"{color.verde}    .....NGROK.....")
     print("")
     print(f"{color.verde}[1]INCIAR NGROK TCP 4444")
