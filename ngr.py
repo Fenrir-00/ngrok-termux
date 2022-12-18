@@ -79,7 +79,7 @@ def carga():
 def menu():
     os.system("clear")
     banner()
-    print(f"{color.morado}           .....NGROK.....")
+    print(f"{color.morado}           .....NGROCK.....")
     print("")
     print(f"{color.verde}[1]INCIAR NGROK TCP 4444")
     print(f"{color.verde}[2]ELEGIR MANUAL TCP ")
@@ -92,7 +92,7 @@ def menu():
      print(len(eleccion))
      os.system("clear")
      banner()
-     print(f"{color.morado}             .....NGROK.....")
+     print(f"{color.morado}             .....NGROCK.....")
      print("")
      print(f"{color.verde}[1]INCIAR NGROK TCP 4444")
      print(f"{color.verde}[2]ELEGIR MANUAL TCP ")
