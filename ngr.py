@@ -86,7 +86,7 @@ def menu():
     print("[3]INCIAR NGROK HTTP 8080")
     print(f"{color.verde}[4]ELEGIR MANUAL HTTP ")
     print(f"{color.amarillo}[5]PONER AUTOKEN")
-    print(f"{color.rojo}[6]SALIR{color.fin}")
+    print(f"{color.rojo}[0]SALIR{color.fin}")
     eleccion =input(f"{color.cyan}ELIJE UN NUMERO >> ")
     while len(eleccion) >= 2:
      print(len(eleccion))
